@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Autos Deluxe</title>
+</head>
+<body>
+    <header>
+        <div class="navegacion">
+            <svg class="logo" width="100" height="100" xmlns="http://www.w3.org/2000/svg">
+                <a href="index.html"><image href="img/LOGO.svg" width="100" height="100" /></a>
+            </svg>
+            <ul class="nav">
+                <a href="index.html"><li>Inicio</li></a>
+                <a href="catalogo.html"><li>Catálogo de autos</li></a>
+                <a href="servicios.html"><li>Servicios</li></a>
+                <a href="nosotros.html"><li>Acerca de Nosotros</li></a>
+                <a href="contacto.html"><li>Contacto</li></a>
+                <a href="blog.html"><li>Blog</li></a>
+                <a href="promociones.html"><li>Promociones</li></a>
+            </ul>
+        </div>
+    </header>
+    <script src="app.js"></script>
+    
+    <div class="cuerpo">
+        <p class="titulo">Lo más nuevo en sucursal</p>
+    </div>
+
+    <section class="sesionAdmin">
+        <div id="loginContenedor">
+            <h2>Iniciar Sesión</h2>
+
+            <form id="loginFormulario">
+                <label for="usuario">Usuario:</label>
+                <input type="text" id="usuario" name="usuario" required><br>
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" name="password" required><br>
+                <button type="button" onclick="login()">Iniciar Sesión</button>
+            </form>
+        </div>
+    
+        <div id="bienvenidaUsuario" >
+            <h2>Bienvenido, <span id="usuarioRegistrado"></span>! Ahora tienes acceso como administrador.</h2>
+        </div>
+        <div id="contenedorCrud">
+            <h3>Agregar, Actualiza o Elimina Autos</h3>
+            <form id="formularioAuto">
+                <label for="marcaAuto">Marca:</label>
+                <input type="text" id="marcaAuto" name="marcaAuto" required><br>
+                <label for="modeloAuto">Modelo:</label>
+                <input type="text" id="modeloAuto" name="modeloAuto" required><br>
+                <label for="anioAuto">Año:</label>
+                <input type="text" id="anioAuto" name="anioAuto" required><br>
+                <button type="button" onclick="agregarAuto()">Agregar Auto</button>
+            </form>
+    
+               
+            <div id="contenedorAutos">
+                <h3>Catálogo de Autos</h3>
+                <ul id="catalogoAutos"></ul>
+            </div>
+        </div>
+        
+    </section>
+
+    <footer class="footer">
+        <div class="redes-sociales">
+            <a href="https://facebook.com/" target="_blank"><img src="img/fb1.png" alt="Facebook"></a>
+            <a href="https://twitter.com/" target="_blank"><img src="img/x.jpeg" alt="Twitter"></a>
+            <a href="https://instagram.com/" target="_blank"><img src="img/pngwing.com (1).png" alt="Instagram"></a>
+        </div>
+        <div class="info-contacto">
+            <p>Contacto: info@agenciadeluxe.com</p>
+            <p>Teléfono: +1 123-456-7890</p>
+        </div>
+    </footer>
+    
+</body>
+</html>

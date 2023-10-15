@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+
+*{
+    margin: 0px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+body{
+    background-color: #121111;
+}
+
+a {
+    color: inherit; /* mantiene el color del texto  */
+    text-decoration: none; /* Elimina el subrayado */
+
+}
+a:hover {
+    color: rgb(197, 185, 20);
+}
+
+header ul {
+    background-color: rgb(0, 0, 0);
+    color: aliceblue;
+    display: flex;
+    justify-content: end;
+    list-style-type: none;
+    justify-items: end;
+}
+.navegacion{
+display: flex;
+justify-content: center;
+
+
+
+}
+
+.nav{
+   
+    align-items: center;
+    display: flex;
+    gap: 80px;
+    padding: 15px;
+    width: 100%;
+    font-size: 25px;
+
+}
+
+    .cuerpo {
+        align-items: center;
+        background-image: url(img/img1.jpg);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        height: 500px;
+        justify-content: center;
+        padding: 400px;
+        align-content: center;
+        text-align: center;
+}
+
+.titulo{
+
+    color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 75px;
+
+}
+
+/* boton cotizar */
+.cotizar{
+    border-radius: 5px;
+    border-width: 0px;
+    background-color: rgb(218, 199, 36);
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: large;
+    height: 70px;
+    width: 100px;
+
+}
+
+
+/* Esta seccion corresponde a los autos mas recientes */
+.titulo2{
+
+    background-color: black;
+    color: aliceblue;
+    display: flex;
+    font-size:45px;
+    gap: 400px;
+    height: 110px;
+    justify-content: center;
+    padding: 90px;
+
+}
+.modeloos_recientes {
+    align-items: center;
+    background-color: black;
+    display: grid;
+    gap: 3px;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+
+}
+
+.modeloos_recientes {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+
+}
+
+.modeloos_recientes .elemento1, .modeloos_recientes .elemento2,.modeloos_recientes .elemento3 {
+    overflow: hidden;
+    position: relative;
+
+}
+
+.modeloos_recientes .elemento1 img, .modeloos_recientes .elemento2 img,.modeloos_recientes .elemento3 img {
+
+    height: auto;
+    transition: transform 0.3s ease;
+    width: 100%;
+
+}
+
+.modeloos_recientes .elemento1 .overlay, .modeloos_recientes .elemento2 .overlay, .modeloos_recientes .elemento3 .overlay {
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    transition: opacity 0.3s ease;
+    width: 100%;
+
+}
+
+.modeloos_recientes .overlay p {
+    color: white;
+    font-size: 16px;
+    text-align: center;
+}
+
+.modeloos_recientes .elemento1:hover .overlay {
+    opacity: 1;
+
+}
+.modeloos_recientes .elemento2:hover .overlay {
+    opacity: 1;
+
+}
+
+.modeloos_recientes .elemento3:hover .overlay {
+    opacity: 1;
+
+}
+
+/*consejos cuidado autos*/
+
+.consejos {
+    background-color: #121111;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 100px;
+    text-align: center;
+
+
+}
+.consejos a:hover{
+
+    color: rgb(197, 185, 20); /* Color cuando el cursor está sobre el enlace */
+
+    }
+
+.consejo {
+    background-color: #4c4242;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    color: antiquewhite;
+    margin: 0 auto;
+    max-width: 300px;
+    padding: 20px;
+
+}
+
+.consejo img {
+
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    width: 80px;
+}
+
+.consejo p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* seccion de footer */
+.footer {
+    background-color: #000000;
+    color: #ebe2e2;
+    padding: 20px;
+    text-align: center;
+
+}
+
+.redes-sociales {
+    margin-bottom: 20px;
+}
+
+.redes-sociales a {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.redes-sociales img {
+
+    height: 30px;
+    width: 30px;
+}
+
+  /* elemntos de la pagina BLOG */
+.feedBlog{
+    color:#f7e6e6;
+    display: flex;
+
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+    }
+
+
+.videos{
+    align-items: center;
+    color: #ebe2e2;
+    display: flex;
+    flex-direction: column;
+    padding: 70px;
+}
+
+/* Contenido formulario de contacto */
+
+form {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+   
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 255, 0); /* Sombras iniciales */
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #e4dbdb;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+input:hover, textarea:hover {
+    border-color: #3498db;
+}
+
+input:focus, textarea:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 10px rgba(0, 0, 255, 0.5); /* Sombras al enfocar */
+}
+
+button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+/* Contenedor de panel de control: inicio de sesion y catalogo */
+.sesionAdmin{
+    color: #ccc;
+    text-align: center;
+
+
+}
+
+/* Estilos para el contenedor del panel de control */
+ #bienvenidaUsuario {
+    display: none;
+    margin: 20px;
+    font-weight: bold;
+} 
+
+/* Estilos para el contenedor del formulario CRUD */
+#contenedorCrud {
+    display: none;
+    margin-top: 20px;
+}
+
+/* Estilos para el formulario CRUD */
+#formularioAuto label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#formularioAuto input {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+/* estilos lista/catalogo de autos */
+#contenedorAutos {
+    margin-top: 50px;
+
+}
+
+
+/* Estilos para la lista de autos */
+#catalogoAutos {
+    list-style-type: none;
+    padding: 10px;
+}
+
+
+/* bontones eliminar y actualizar */
+button {
+    
+    font-size: 12px; 
+    
+    padding: 5px 7px; 
+   
+}
+

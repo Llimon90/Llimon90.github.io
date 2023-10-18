@@ -1,0 +1,489 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0;
+   
+}
+
+body{
+    background-color:rgb(0, 0, 0);
+    
+}
+
+/* Estilos para todos los enlaces */
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Estilo al pasar el mouse por encima de los enlaces */
+a:hover {
+    color: rgb(197, 185, 20);
+}
+
+/* Estilos para el encabezado */
+header{
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav {
+    background: #000000;
+    height: 80px;
+    width: auto;
+
+}
+nav ul {
+    float: right; 
+    margin-right: 20px;
+   
+
+
+}
+
+nav ul li{
+display: inline-block; 
+margin: 0 5px;  
+line-height: 80px;
+}
+
+
+nav ul li a{
+    color:antiquewhite;
+    font-size: 18px;
+    padding: 7px 13px;
+    text-transform: uppercase;
+    
+}
+
+.enlace{
+    padding: 20px 50px;
+    position: absolute;
+    
+}
+    
+.logo{
+    height:60px;  
+    line-height: 80px;
+    
+   
+}
+
+.checkbtn{
+    
+    color: aliceblue;
+    cursor: pointer;
+    display: none;
+    float: right;
+    font-size: 30px;
+    line-height: 80px;
+    margin-right: 40px;
+    
+}
+
+#check{
+    display: none;
+}
+
+
+/* Estilos para la sección de cuerpo */
+.cuerpo {
+    background-image: url(img/img1.jpg);
+    background-size:auto;
+    background-color: black;
+    flex-direction: column;
+    gap: 10px;
+    padding: 150px 20px; /* Ajustado el espacio interno para tamaños más pequeños */
+    text-align: center;
+}
+
+/* Estilos para el título */
+.titulo {
+    color: antiquewhite;
+    font-size: 75px;
+}
+
+/* Estilos para el botón "Cotizar" */
+.cotizar {
+    border-radius: 5px;
+    border-width: 0px;
+    background-color: rgb(218, 199, 36);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: large;
+    height: 70px;
+    width: 100px;
+}
+
+
+
+/* Esta seccion corresponde a los autos mas recientes */
+.titulo2{
+
+    background-color: black;
+    color: aliceblue;
+    display: flex;
+    font-size:45px;
+    gap: 400px;
+    height: 100%;
+    justify-content: center;
+    padding: 150px;
+    text-align: center;
+
+}
+.modeloos_recientes {
+    align-items: center;
+    background-color: black;
+    display: grid;
+    gap: 3px;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    
+}
+
+.modeloos_recientes {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+
+}
+
+.modeloos_recientes .elemento1, .modeloos_recientes .elemento2,.modeloos_recientes .elemento3 {
+    overflow: hidden;
+    position: relative;
+
+}
+
+.modeloos_recientes .elemento1 img, .modeloos_recientes .elemento2 img,.modeloos_recientes .elemento3 img {
+
+    height: auto;
+    transition: transform 0.3s ease;
+    width: 100%;
+
+}
+
+.modeloos_recientes .elemento1 .overlay, .modeloos_recientes .elemento2 .overlay, .modeloos_recientes .elemento3 .overlay {
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    transition: opacity 0.3s ease;
+    width: 100%;
+
+}
+
+.modeloos_recientes .overlay p {
+    color: white;
+    font-size: 16px;
+    text-align: center;
+}
+
+.modeloos_recientes .elemento1:hover .overlay {
+    opacity: 1;
+
+}
+.modeloos_recientes .elemento2:hover .overlay {
+    opacity: 1;
+
+}
+
+.modeloos_recientes .elemento3:hover .overlay {
+    opacity: 1;
+
+}
+
+/*consejos cuidado autos*/
+
+.consejos {
+    background-color: #121111;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3, 1fr); 
+  
+    text-align: center;
+    width: auto;
+   
+    
+
+
+}
+.consejos a:hover{
+
+    color: rgb(197, 185, 20); /* Color cuando el cursor está sobre el enlace */
+
+    }
+
+.consejo {
+    background-color: #4c4242;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    color: antiquewhite;
+    margin: 20px auto ;
+    max-width: 300px;
+    
+
+}
+
+.consejo img {
+    border-radius: 50%;
+    height: 80px;
+    margin-bottom: 10px;
+    width: 80px;
+}
+
+.consejo p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* seccion de footer */
+.footer {
+    background-color: #000000;
+    color: #ebe2e2;
+    padding: 20px;
+    text-align: center;
+
+}
+
+.redes-sociales {
+    margin-bottom: 20px;
+}
+
+.redes-sociales a {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.redes-sociales img {
+
+    height: 30px;
+    width: 30px;
+}
+
+
+  /* elemntos de la pagina BLOG */
+.feedBlog{
+    color:#f7e6e6;
+    display: flex;
+
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+    }
+
+
+.videos{
+    align-items: center;
+    color: #ebe2e2;
+    display: flex;
+    flex-direction: column;
+    padding: 70px;
+    text-align: center;
+}
+
+/* Contenido formulario de CONTACTO */
+
+form {
+    
+   
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 255, 0); /* Sombras iniciales */
+    margin: 20px auto;
+    max-width: 400px;
+    padding: 20px;
+   
+}
+
+label {
+    color: #e4dbdb;
+    display: block;
+    margin-bottom: 8px;
+    
+}
+
+input, textarea {
+
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    outline: none;
+    margin-bottom: 15px;
+    padding: 10px;
+    transition: border-color 0.3s;
+    width: 100%;
+}
+
+input:hover, textarea:hover {
+    border-color: #3498db;
+}
+
+input:focus, textarea:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 10px rgba(0, 0, 255, 0.5); /* Sombras al enfocar */
+}
+
+button {
+    background-color: #3498db;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px 15px;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+
+/* Contenedor de panel de control: inicio de sesion y catalogo CRUD */
+.sesionAdmin{
+    color: #ccc;
+    text-align: center;
+
+
+}
+
+/* Estilos para el contenedor del panel de control */
+ #bienvenidaUsuario {
+    display: none;
+  
+    font-weight: bold;
+    margin: 20px;
+} 
+
+/* Estilos para el contenedor del formulario CRUD */
+#contenedorCrud {
+    display: none;
+    margin-top: 20px;
+}
+
+/* Estilos para el formulario CRUD */
+#formularioAuto label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#formularioAuto input {
+   
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+/* estilos lista/catalogo de autos */
+#contenedorAutos {
+    margin-top: 20px;
+
+}
+
+
+/* Estilos para la lista de autos */
+#catalogoAutos {
+    list-style-type: none;
+    
+    
+}
+
+
+/* bontones eliminar y actualizar */
+button {
+    
+    font-size: 12px; 
+    
+    padding: 5px 7px; 
+   
+}
+
+
+
+
+
+/* Disenio responsive */
+@media screen and (max-width: 1200px) {
+
+    /* estilos para HEADER */
+    .checkbtn{
+        display:block;
+    }
+    
+    nav ul{
+       
+        background-color: rgb(154, 100, 30);
+        
+       
+        height: 100vh;
+     
+
+        left: -100%; /*ESCONDE LA LISTA A LA IZQUIERDA*/
+        
+    
+        position:fixed;
+    
+        text-align: left;
+        top: 0px;
+        transition: all 0.5s;
+        width: 50%;
+        
+    }
+    
+    nav ul li{
+        display:block;
+        line-height: 30px;
+        margin: 50px 0;
+        text-align: center;
+        justify-content: center;
+        justify-items: center;
+    
+    }
+    
+    nav ul li a{
+        font-size: 20px;
+    }
+    
+    /*al activar un check vinculado a icono de barras cambia el parametro de left y a parece menú*/
+    #check:checked ~ ul{ 
+        left: 0;
+    }
+    
+    /*ESTILOS PARA CUERPO DE SITIO*/
+    .cuerpo {
+        background-image: url(img/img1.jpg);
+       
+    }
+    .cuerpo p{
+        font-size: xx-large;
+        max-width: 100%;
+        text-align: center;
+    }
+            
+    .titulo2{
+        font-size: xx-large;
+    }
+    .modeloos_recientes{
+        
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        padding: 5%;
+    }
+           
+    .consejos{
+        display: flex;
+        flex-direction: column;
+                
+    }
+
+}
+
+
+    

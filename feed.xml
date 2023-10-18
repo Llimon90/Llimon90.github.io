@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+    <channel>
+        <title>Blog de Autos</title>
+        <link></link>
+        <description>Aquí tienes noticias sobre automóviles</description>
+    
+        <item>
+            <title>Prueba de coches</title>
+            <link>https://elmotor.net/category/pruebas-coches/</link>
+            <description>Aquí encontrarás las mejores pruebas de automóviles</description>
+        </item>
+
+        <item>
+            <title>Novedades de coches</title>
+            <link>https://elmotor.net/category/novedades-coches/</link>
+            <description>Aquí encontrarás novedades sobre automóviles</description>
+        </item>
+
+        <item>
+            <title>Artículos de interés</title>
+            <link>https://elmotor.net/category/articulos/</link>
+            <description>Enterate de los temas más interesantes de la industria</description>
+        </item>
+
+        <item>
+            <title>Conducción deportiva</title>
+            <link>https://www.topgear.es/noticias/deportivos/tecnicas-conduccion-deportiva-171260</link>
+            <description>Noticias y tips sobre conducción deportiva</description>
+        </item>
+
+        <item>
+            <title>Cuida tu motor</title>
+            <link>https://www.autotropical.com/consejos-10-importantes-tips-para-cuidar-tu-motor/</link>
+            <description>Consejos importantes para cuidar tu motor</description>
+        </item>
+    </channel>
+</rss>
+
+

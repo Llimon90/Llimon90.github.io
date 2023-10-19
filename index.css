@@ -477,7 +477,12 @@ button {
         max-width: 100%;
         text-align: center;
     }
-            
+        .catalogoCRUD p{
+        font-size: xx-large;
+        max-width: 100%;
+        text-align: center;
+    }
+                 
     .titulo2{
         font-size: xx-large;
     }

@@ -416,6 +416,26 @@ button {
    
 }
 
+/*ESTILOS TABLA*/
+
+#tablaCatalogoAutos {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#tablaCatalogoAutos th, #tablaCatalogoAutos td {
+    border: 1px solid #000;
+    padding: 8px;
+    text-align: center; 
+    color:#e4dede;
+    background-color: #4c4242;
+}
+
+#tablaCatalogoAutos th {
+    background-color: #f0f0f0; 
+    color: #000000;
+}
+
 
 
 
@@ -499,7 +519,14 @@ button {
         flex-direction: column;
                 
     }
+ #tablaCatalogoAutos {
+        font-size: 12px; /* Reduce el tamaño de fuente en pantallas pequeñas */
 
+
+    }
+    #tablaCatalogoAutos th, #tablaCatalogoAutos td {
+        padding: 4px; 
+    }
 }
 
 

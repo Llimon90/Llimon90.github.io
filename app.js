@@ -114,4 +114,3 @@ function borrarAuto(index) {
 }
 
 cargarDatosDesdeLocalStorage();
-

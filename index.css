@@ -106,7 +106,20 @@ nav ul li a{
     color: antiquewhite;
     font-size: 75px;
 }
+.catalogoCRUD {
+    
+    background-size:auto;
+    background-color: black;
+    flex-direction: column;
+    gap: 10px;
+    padding: 150px 20px; /* Ajustado el espacio interno para tamaños más pequeños */
+    text-align: center;
+}
 
+.titulo3 {
+    color: antiquewhite;
+    font-size: 50px;
+} 
 /* Estilos para el botón "Cotizar" */
 .cotizar {
     border-radius: 5px;

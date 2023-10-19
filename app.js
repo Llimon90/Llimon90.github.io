@@ -1,3 +1,5 @@
+alert ("USUARIO: admin PASSWORD: admin ");
+
 var catalogoAutos = [];
 var autenticacion = false;
 
